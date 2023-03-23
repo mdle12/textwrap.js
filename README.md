@@ -9,7 +9,7 @@ For a more detailed documentation, see [the original Python documentation](https
 ### wrap
 
 ```js
-const textwrap = require('textwrap');
+const textwrap = require('textwrap.js');
 var value = "This function wraps the input paragraph such that each line in the paragraph is at most width characters long. The wrap method returns a list of output lines. The returned list is empty if the wrapped output has no content."
 
 var wrapper = new textwrap.TextWrapper({width: 50})
@@ -29,7 +29,7 @@ wrapped output has no content.
 ### fill
 
 ```js
-const textwrap = require('textwrap')
+const textwrap = require('textwrap.js')
 var value = "This function returns the answer as STRING and not LIST."
 
 var wrapper = textwrap.TextWrapper({width: 50})
@@ -45,7 +45,7 @@ LIST.
 ### dedent
 
 ```js
-const textwrap = require('textwrap')
+const textwrap = require('textwrap.js')
 
 var s = "    hello\n      world\n    "
 console.log(s)
@@ -65,7 +65,7 @@ hello
 ### shorten
 
 ```js
-const textwrap = require('textwrap')
+const textwrap = require('textwrap.js')
 
 var sample_text = "This function wraps the input paragraph such that each line in the paragraph is at most width characters long. The wrap method returns a list of output lines. The returned list is empty if the wrapped output has no content."
 
@@ -98,7 +98,7 @@ each line in the paragraph is at most width [...]
 ### indent
 
 ```js
-const textwrap = require('textwrap')
+const textwrap = require('textwrap.js')
 
 var s = "hello\n\n \nworld"
 var s1 = textwrap.indent(s, ' ')
