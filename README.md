@@ -9,7 +9,7 @@ For a more detailed documentation, see [the original Python documentation](https
 ### wrap
 
 ```js
-const textwrap = require('textwrap.js');
+const textwrap = require('textwrap.js')
 var value = "This function wraps the input paragraph such that each line in the paragraph is at most width characters long. The wrap method returns a list of output lines. The returned list is empty if the wrapped output has no content."
 
 var wrapper = new textwrap.TextWrapper({width: 50})

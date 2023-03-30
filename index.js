@@ -15,12 +15,6 @@ const any = (arr, pred) => {
     return outcome;
 };
 
-const map = (arr, pred) => {
-    var outcome = [];
-    arr.forEach(elem => outcome.push(pred(elem)));
-    return outcome;
-};
-
 const sum = (iter, start=0) => {
     var outcome = start;
     iter.forEach(elem => outcome += elem);
@@ -265,7 +259,7 @@ class TextWrapper {
             // line (not just this one)
             if (chunks.length != 0 && chunks[chunks.length - 1].length > width) {
                 this._handle_long_word(chunks, cur_line, cur_len, width);
-                var cur_len = sum(map(cur_line, l => l.length));
+                var cur_len = sum(cur_line.map(l => l.length));
             }
 
             // if the last chunk on this line is all whitespace, drop it.
